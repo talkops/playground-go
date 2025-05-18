@@ -18,9 +18,8 @@ ENTRYPOINT [ "./entrypoint.sh" ]
 CMD ["pm2-runtime", "ecosystem.config.cjs"]
 
 FROM base
-COPY go.mod . 
-COPY go.sum .
-COPY src src
+COPY go.mod go.sum ./
 RUN go mod download
+COPY src src
 USER 1000:1000
 CMD ["pm2-runtime", "ecosystem.config.cjs"]
