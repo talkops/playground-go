@@ -15,11 +15,11 @@ FROM base AS dev
 USER 1000:1000
 VOLUME [ "/app" ]
 ENTRYPOINT [ "./entrypoint.sh" ]
-CMD ["pm2-runtime", "ecosystem.config.cjs"]
+CMD ["pm2-runtime", "ecosystem.dev.config.cjs"]
 
-FROM base
-COPY go.mod go.sum ./
+FROM base AS prod
+COPY ecosystem.prod.config.cjs go.mod go.sum ./
 RUN go mod download
 COPY src src
 USER 1000:1000
-CMD ["pm2-runtime", "ecosystem.config.cjs"]
+CMD ["pm2-runtime", "ecosystem.prod.config.cjs"]
