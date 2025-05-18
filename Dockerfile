@@ -3,7 +3,7 @@ ENV TALKOPS_SOCKET=/tmp/talkops.sock \
     TALKOPS_STDERR=/tmp/talkops.stderr.log \
     TALKOPS_STDOUT=/tmp/talkops.stdout.log
 RUN apk add --no-cache nodejs npm && \
-    npm install -g pm2@6.0.6 talkops-client@1.0.1 && \
+    npm install -g pm2@6.0.6 talkops-client@1.0.2 && \
     mkdir /.cache && \
     mkdir /.pm2 && \
     mkdir /app && \
