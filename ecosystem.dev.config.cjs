@@ -5,7 +5,7 @@ module.exports = {
       name: 'client',
     },
     {
-      autorestart: true,
+      autorestart: false,
       cmd: 'go build -o /tmp/app src/main.go && /tmp/app',
       error_file: process.env.TALKOPS_STDERR,
       ignore_watch: [
