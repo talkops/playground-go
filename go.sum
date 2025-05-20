@@ -1,2 +1,4 @@
 github.com/talkops/sdk-go v1.0.1 h1:f+BOkspJlBX0CGPMxqQjjw/z0ZqWkNcD+JNbdrLgcw8=
 github.com/talkops/sdk-go v1.0.1/go.mod h1:Twq7f/yD6hKwxRXgLNSd2IG7EjA2L/Tn4Hzb0uQguc8=
+github.com/talkops/sdk-go v1.1.0 h1:e6HIItPGYNyO7fRTImtNr6jxMjdjU/G5TmKfG5tTECo=
+github.com/talkops/sdk-go v1.1.0/go.mod h1:Twq7f/yD6hKwxRXgLNSd2IG7EjA2L/Tn4Hzb0uQguc8=
